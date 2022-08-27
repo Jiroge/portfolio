@@ -1,0 +1,107 @@
+.list {
+    margin: 20px 20px;
+    text-align: center;
+    color: white;
+    width: 90%;
+    padding-bottom: 20px;
+}
+.item {
+    display: inline-block;
+    width: 270px;
+    height: auto;
+    margin: 20px;
+    background-color: white;
+    /* box-shadow: #6B98BF 0.3em 0.5em 0.8em; */
+    transition: 0.5s;
+    border-radius: 10px;
+    border: 0.5px solid #6B98BF;
+}
+
+.item:hover {
+    transform: scale(1.01, 1.01);
+    box-shadow: 5px 5px 5px 5px #91B7D9, 
+      -5px -5px 30px 15px white;
+  }
+
+.list .item img {
+    width: 230px;
+    height: 150px;
+    margin: 10px 0px 0px 0px;
+}
+
+.list h1 span{
+    margin: 20px auto 0 auto;
+    /* color: #474F59; */
+    width: 20%;
+    background-image: linear-gradient(90deg, rgba(107,152,191,1) 0%, rgba(0,0,0,1) 100%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.list .item h3 {
+    color: black;
+    margin: 10px 20px;
+    text-align: left;
+}
+
+.list .item h2 a {
+    background-color: #6B98BF;
+    margin-left: 10px;
+}
+
+.list .item a img{
+    margin:0px 5px 0px 5px;
+    width: auto;
+    height: 30px;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.list .item a img:hover{
+    margin:0px 5px 0px 5px;
+    width: auto;
+    height: 40px;
+    background-color: white;
+}
+
+.list .item p {
+    color: black;
+    margin: 0px 5px 5px 5px;
+    
+}
+
+.list .item p span {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    margin: 0px 5px;
+    color:rgba(52, 73, 94, 1);
+    background-color:  #F1F2F2;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-radius: 1em;
+    font-size: 0.7em;
+}
+
+.list .item .projectDes {
+    font-size: 1rem;
+    text-align: left;
+    margin: 0 15px 0 15px;
+    line-height: 20px;
+    font-size: 0.8rem;
+}
+
+@media (max-width:700px){
+    .item {
+        width: 250px;
+        height: auto;
+        margin: 10px;
+    }
+    .list .item img {
+        width: 200px;
+        height: 130px;
+        margin: 10px 0px 0px 0px;
+    }
+  }

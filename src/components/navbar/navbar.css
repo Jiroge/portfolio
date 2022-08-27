@@ -1,0 +1,40 @@
+.menu{
+    margin: auto 0;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    background-color: #91B7D9;
+}
+
+.menu ul{
+    display:flex;
+    padding: 0;
+    list-style:none;
+    justify-content: center;
+    
+}
+.menu ul li{
+    padding:16px;
+    padding: 0;
+    margin: 20px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #474F59;
+    font-size: 2em;
+    font-weight: 100px;
+}
+.menu ul li :hover{
+    color: white;
+    font-size: 2.2em;
+    transition: 0.3s;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+@media (max-width:750px){
+    .menu ul li a{
+        font-size: 1.5em;
+        font-weight: 100px;
+    }
+  }
