@@ -9,12 +9,12 @@
 }
 
 .contact h3 {
-    margin-right: 85px;
+    text-align: center;
 }
 
 .contentContact {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .contentContact a img {
