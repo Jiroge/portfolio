@@ -1,8 +1,9 @@
 import "./aboutme.scss";
+import profile from "./profile.jpg"
 function AboutMe() {
   return (
     <div className="aboutme">
-      <img src="src/components/aboutme/profile.jpg" class="clipped" />
+      <img src={profile} class="clipped" />
       <div className="text">
         <h1>
           Hi there!
