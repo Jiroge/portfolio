@@ -98,9 +98,9 @@ function Project() {
           <span>PYTHON</span>
         </p>
         {/* <a href = "#" target = "_blank"><img src="src/components/project/link.png"/></a> */}
-        {/* <a href="#" target="_blank">
+        <a href="https://github.com/Jiroge/How-Old-Are-You" target="_blank">
           <img src={giticon} />
-        </a> */}
+        </a>
       </div>
     </div>
   );
