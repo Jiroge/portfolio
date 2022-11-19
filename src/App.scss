@@ -1,5 +1,5 @@
 * {
-    /* border: 1px solid black; */
+    // border: 1px solid black;
     margin: 0px;
     padding: 0px;
     font-family: "Gill Sans Extrabold", sans-serif;
@@ -7,7 +7,7 @@
   }
 
 .myPort {
-    background-color: white;
+    background-color: #474f59;
     
 }
 .containerNavbar {
@@ -22,9 +22,6 @@
     display: flex;
     justify-content:center;
     font-size: 0.7em;
-    background-image: url("src/components/aboutme/wavehead.svg");
-    background-repeat: no-repeat;
-    background-position: top -80px right 0px;
 }
 
 .containerProject {
@@ -46,9 +43,6 @@
     padding:30px 20px;
     box-shadow:0px 0px 10px white;
     height: 620px;
-    background-image: url("src/components/contact/wavebottom.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 00px right 0px;
 }
 
 @media (max-width:850px){
