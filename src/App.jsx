@@ -5,44 +5,26 @@ import AboutMe from "./components/aboutme/aboutme";
 import Project from "./components/project/project";
 import Skills from "./components/skills/skills";
 import Experience from "./components/experience/experience";
-import Contact from "./components/contact/contact";
 
 function App() {
   // const [count, setCount] = useState(0)
 
   return (
     <div className="myPort">
-      <div className="containerNavbar">
-        <div className="menu">
-          <ul>
-            <li>
-              <a href="#aboutme">Home</a>
-            </li>
-            <li>
-              <a href="#project">Projects</a>
-            </li>
-            <li>
-              <a href="#skill">Skills</a>
-            </li>
-            {/* <li><a href="#">Activities</a></li> */}
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-          </ul>
-        </div>
+      <div id="containerNavbar">
+        <Navbar />
       </div>
-      <div className="containerAboutMe" id="aboutme">
+      <div id="containerAboutMe">
         <AboutMe />
       </div>
-      <div className="containerProject" id="project">
+      <div id="containerProject">
         <Project />
       </div>
-      <div className="containerSkill" id="skill">
+      <div id="containerSkill" >
         <Skills />
       </div>
-      <div className="containerExperienceAndContact" id="experience">
+      <div id="containerExperienceAndContact">
         <Experience />
-        <Contact />
       </div>
     </div>
   );

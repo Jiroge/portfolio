@@ -1,13 +1,16 @@
-import './navbar.css'
+import './navbar.scss'
+import logo from "./logo2.png";
+
 function Navbar() {
     return (
         <div className="menu">
+            <img src={logo}/>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Skills</a></li>
+                <li><a href="#containerAboutMe">Home</a></li>
+                <li><a href="#containerProject">Projects</a></li>
+                <li><a href="#containerSkill">Skills</a></li>
                 {/* <li><a href="#">Activities</a></li> */}
-                <li><a href="#">Contact</a></li>
+                <li><a href="#containerExperienceAndContact">Contact</a></li>
             </ul>
         </div>
     )

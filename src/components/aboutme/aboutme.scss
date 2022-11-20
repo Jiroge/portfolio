@@ -20,7 +20,14 @@
         color: #ffffff;
         line-height: 30px;
         width: 850px;
-        margin: 20px auto 20px auto;
+        margin: 0px auto 20px auto;
+        text-align: justify;
+        z-index: 2;
+        background-color: #474f59;
+        &:after {
+          content: "";
+          display: inline-block;
+        }
         span {
           font-weight: 700;
           color: rgba(107, 152, 191, 1);
@@ -34,32 +41,28 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 20px auto;
+        margin: 0px auto;
         padding-top: 20px;
-      //   border: 0.5px solid #474f59;
-        /* width: 80%; */
         .circle {
-          height: 420px;
-          width: 420px;
+          position: absolute;
+          height: 100%;
+          width: 100%;  
           background: #b0c6d9;
-          clip-path: circle(600px at left 850px);
-          z-index: 0;
+          clip-path: circle(550px at right 30px);
+          z-index: 1;
         }
         .clipped {
-          position: absolute;
-          z-index: 1;
-          height: 420px;
-          width: 420px;
-          border-radius: 1em;
-          left: 260px;
+          height: 370px;
+          width: 405px;        
+          z-index: 2;
         }
         .text {
-          z-index: 1;
           margin-left: 20px;
           margin-right: 20px;
           padding: 10px 10px;
           border-radius: 1em;
-         
+          z-index: 2;
+          
           h1 {
             color: #b0c6d9;
             line-height:40px;
@@ -86,6 +89,13 @@
               // padding: 15px;
               // border-radius: 30px;
             }
+          }
+        }
+        .socialContact {
+          display: flex;
+          justify-content: flex-y;
+          a {
+            margin: 5px;
           }
         }
       }
