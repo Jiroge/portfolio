@@ -10,7 +10,7 @@ function Navbar() {
                 <li><a href="#containerProject">Projects</a></li>
                 <li><a href="#containerSkill">Skills</a></li>
                 {/* <li><a href="#">Activities</a></li> */}
-                <li><a href="#containerExperienceAndContact">Contact</a></li>
+                <li><a href="#containerExperience">Experience</a></li>
             </ul>
         </div>
     )

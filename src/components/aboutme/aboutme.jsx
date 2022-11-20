@@ -8,7 +8,7 @@ import {
 } from "react-icons/ai";
 
 function AboutMe() {
-  const [showAboutMe, setShowAboutMe] = useState(true);
+  const [showAboutMe, setShowAboutMe] = useState(false);
   return (
     <div className="content">
       <div className="aboutme">
@@ -19,17 +19,17 @@ function AboutMe() {
             <br />
             My name is <span>Jiroge Saeying</span>
           </h1>
-          <button href="./Jiroge.pdf" target="_blank" className="buttonST">
-            RESUME
-          </button>
-          <button
+          <a href="./Jiroge.pdf" target="_blank">
+            <button className="buttonST">RESUME</button>
+          </a>
+          {/* <button
             className="buttonST"
             onClick={() => {
               setShowAboutMe(!showAboutMe);
             }}
           >
             ABOUT ME
-          </button>
+          </button> */}
           <div className="socialContact">
             <a href="https://web.facebook.com/JoeJiroge" target="_blank">
               <AiOutlineFacebook
