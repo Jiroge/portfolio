@@ -16,12 +16,17 @@ function AboutMe() {
         <div className="text">
           <h1>
             Hi there !
+            <br/>
+            Software Developer
             <br />
             My name is <span>Jiroge Saeying</span>
           </h1>
-          <a href="./Jiroge.pdf" target="_blank">
+          <a href="https://drive.google.com/file/d/160LrcNYM9osPEnZzWBYjfNc3JJmU2ajX/view" target="_blank">
             <button className="buttonST">RESUME</button>
           </a>
+          {/* <a href="./Jiroge.pdf" target="_blank">
+            <button className="buttonST">RESUME</button>
+          </a> */}
           {/* <button
             className="buttonST"
             onClick={() => {
