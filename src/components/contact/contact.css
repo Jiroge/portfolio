@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    color: 474F59;
+    margin-top: 50px;
+    margin-right: 50px;
+}
+
+.contact h3 {
+    text-align: center;
+}
+
+.contentContact {
+    display: flex;
+    justify-content: center;
+}
+
+.contentContact a img {
+    height: 60px;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+.contentContact a img:hover {
+    height: 80px;
+    margin: 5px;
+}
