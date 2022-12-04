@@ -1,6 +1,6 @@
 import "./aboutme.scss";
 import profile from "./profile3.png";
-import React, { useState } from "react";
+import React from "react";
 import {
   AiOutlineLinkedin,
   AiOutlineFacebook,
@@ -8,7 +8,6 @@ import {
 } from "react-icons/ai";
 
 function AboutMe() {
-  const [showAboutMe, setShowAboutMe] = useState(false);
   return (
     <div className="content">
       <div className="aboutme">
@@ -16,25 +15,18 @@ function AboutMe() {
         <div className="text">
           <h1>
             Hi there !
-            <br/>
+            <br />
             Software Developer
             <br />
             My name is <span>Jiroge Saeying</span>
           </h1>
-          <a href="https://drive.google.com/file/d/160LrcNYM9osPEnZzWBYjfNc3JJmU2ajX/view" target="_blank">
+          <a
+            href="https://drive.google.com/file/d/160LrcNYM9osPEnZzWBYjfNc3JJmU2ajX/view"
+            target="_blank"
+          >
             <button className="buttonST">RESUME</button>
           </a>
-          {/* <a href="./Jiroge.pdf" target="_blank">
-            <button className="buttonST">RESUME</button>
-          </a> */}
-          {/* <button
-            className="buttonST"
-            onClick={() => {
-              setShowAboutMe(!showAboutMe);
-            }}
-          >
-            ABOUT ME
-          </button> */}
+
           <div className="socialContact">
             <a href="https://web.facebook.com/JoeJiroge" target="_blank">
               <AiOutlineFacebook
@@ -68,22 +60,20 @@ function AboutMe() {
         <img src={profile} className="clipped" />
       </div>
 
-      {showAboutMe ? null : (
-        <p className="details">
-          I formerly worked in a factory that exported fruit to China.
-          Technology and career path are two of my interests. I was given the
-          opportunity to study the{" "}
-          <span href="https://thailand.generation.org/" target="_blank">
-            Generation
-          </span>{" "}
-          using the MERN stack (MongoDB, Express, React, Nodejs). I was taught
-          how to create a website by professionals in the industry. Online
-          courses are also available for independent learning. We do many
-          projects during the boot camp using agile with a scrum framework
-          working groups. In addition, learning a lot while attending the
-          Generation, I also developed my hard skills and soft skills.
-        </p>
-      )}
+      <p className="details">
+        I formerly worked in a factory that exported fruit to China. Technology
+        and career path are two of my interests. I was given the opportunity to
+        study the{" "}
+        <span href="https://thailand.generation.org/" target="_blank">
+          Generation
+        </span>{" "}
+        using the MERN stack (MongoDB, Express, React, Nodejs). I was taught how
+        to create a website by professionals in the industry. Online courses are
+        also available for independent learning. We do many projects during the
+        boot camp using agile with a scrum framework working groups. In
+        addition, learning a lot while attending the Generation, I also
+        developed my hard skills and soft skills.
+      </p>
     </div>
   );
 }
